@@ -5,9 +5,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2B2D9E17-BC39-4CC9-858A-541D79A222B0}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>AreaRugs</RootNamespace>
+    <RootNamespace>LWM.AreaRugs</RootNamespace>
     <AssemblyName>AreaRugs</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -18,6 +18,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+<!-- For msbuild on command line.  Seriously, they cannot use the same xml structure? :p -->
+    <PostBuildEvent>/bin/cp "$(MSBuildProjectDirectory)/$(OutputPath)/$(AssemblyName).dll" "$(MSBuildProjectDirectory)/../Assemblies/"</PostBuildEvent>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>/bin/cp ${TargetFile} ${ProjectDir}/../Assemblies/</command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
@@ -25,12 +35,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+<!-- For msbuild on command line.  Seriously, they cannot use the same xml structure? :p -->
+    <PostBuildEvent>/bin/cp "$(MSBuildProjectDirectory)/$(OutputPath)/$(AssemblyName).dll" "$(MSBuildProjectDirectory)/../Assemblies/"</PostBuildEvent>
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>/bin/cp ${TargetFile} ${ProjectDir}/../Assemblies/</command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+		<Reference Include="Assembly-CSharp">
+      <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyClass.cs" />
+    <Compile Include="RandomColorCloth.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

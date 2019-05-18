@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="LD-BuildingBase" Abstract="True">
+    <category>Building</category>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef Name="LD-ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <ThingDef Name="LWM_ColoredClothBase" ParentName="LD-ResourceBase" Abstract="True">
+    <!--Specify: <defName>RedCloth</defName>
+    <label>red cloth</label>
+    <description>Red Cloth made of dyed organic fibers.</description>-->
+    <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <!--Specify: <color>(125,50,60)</color>-->
+    </graphicData>
+    <statBases>
+      <StuffPower_Armor_Sharp>0.36</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.18</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>18</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>18</StuffPower_Insulation_Heat>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>1.5</MarketValue>
+      <Mass>0.026</Mass>
+      <Flammability>1.2</Flammability>
+      <DeteriorationRate>4</DeteriorationRate>
+    </statBases>
+    <stuffProps>
+      <statFactors>
+        <Flammability>1.2</Flammability>
+      </statFactors>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <!--Specify: <color>(125,50,60)</color>-->
+      <allowColorGenerators>false</allowColorGenerators>
+    </stuffProps>
+    <thingCategories>
+      <li>DyedCloth</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <ThingDef Name="LD-ResourceVerbBase" ParentName="LD-ResourceBase" Abstract="True">
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef Name="LD-AreaRugBase" ParentName="LD-BuildingBase" Abstract="True">
+    <building>
+      <isEdifice>false</isEdifice>
+    </building>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+	<nameMaker>NamerArtSculpture</nameMaker>
+	<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+	<minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <!--<DesignationCategory>Furniture</DesignationCategory>-->
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>TableRugMaking</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <clearBuildingArea>false</clearBuildingArea>
+  </ThingDef>
+</Defs>

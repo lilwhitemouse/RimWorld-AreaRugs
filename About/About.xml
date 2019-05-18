@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Area Rugs 1.0 [LWM]</name>
+  <author>LWM, Fisty, and Darc</author>
+	<supportedVersions>
+		<li>1.0</li>
+	</supportedVersions>
+  <description>This mod adds to RimWorld:
+----------------
+1 Door mat (rotate to align correctly with doorway) (no functionality beyond being pretty)
+7 Circle rugs (1x1 to 7x7 tiles)
+7 Square rugs (1x1 to 7x7 tiles)
+6 Hall runners (1x2 to 1x7 tiles)
+9 Rectangle rugs (2x3 to 6x8 tiles)
+25 New cloth colors
+----------------
+
+Credit:
+All graphics and some XML coding by AElflaed (Fisty), extra XML coding and testing by Darc Clan.  All C# and some XML by LWM.
+
+Permissions:
+Based off the B19 version (https://steamcommunity.com/sharedfiles/filedetails/?id=934235098) by Fisty and Darc.
+This page: https://www.nexusmods.com/rimworld/mods/112/? seems to grant permission to modify the mod?  If I am in any error, please forgive, and I will remove this version.  (I have tagged this version [LWM] so "Area Rugs 1.0" is still available)
+</description>
+</ModMetaData>

@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+	    <defName>DyeClothRandom</defName>
+	    <label>Dye Cloth Random Colour</label>
+	    <description>Make a bundle of cloth in whatever colour the craftperson feels like.  It's a surprise!</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+	      <li>
+		<filter>
+		  <thingDefs>
+		    <li>Cloth</li>
+		  </thingDefs>
+		</filter>
+		<count>10</count>
+	      </li>
+	    </ingredients>
+	    <fixedIngredientFilter>
+	      <thingDefs>
+		<li>Cloth</li>
+	      </thingDefs>
+	    </fixedIngredientFilter>
+	    <products>
+	      <LWM_RandomColoredCloth>10</LWM_RandomColoredCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+
+  
+	<RecipeDef>
+	    <defName>DyeClothRed</defName>
+	    <label>Dye Cloth Red</label>
+	    <description>Make a bundle of cloth red.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <RedCloth>10</RedCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothVividRed</defName>
+	    <label>Dye Cloth Vivid Red</label>
+	    <description>Make a bundle of cloth vivid red.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividRedCloth>10</VividRedCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+
+	<RecipeDef>
+	    <defName>DyeClothVividPink</defName>
+	    <label>Dye Cloth Vivid Pink</label>
+	    <description>Make a bundle of cloth vivid pink.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividPinkCloth>10</VividPinkCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothOrange</defName>
+	    <label>Dye Cloth Orange</label>
+	    <description>Make a bundle of cloth orange.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <OrangeCloth>10</OrangeCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothVividOrange</defName>
+	    <label>Dye Cloth Vivid Orange</label>
+	    <description>Make a bundle of cloth vivid orange.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividOrangeCloth>10</VividOrangeCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothYellow</defName>
+	    <label>Dye Cloth Yellow</label>
+	    <description>Make a bundle of cloth yellow.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <YellowCloth>10</YellowCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothVividYellow</defName>
+	    <label>Dye Cloth Vivid Yellow</label>
+	    <description>Make a bundle of cloth vivid yellow.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividYellowCloth>10</VividYellowCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothVividLime</defName>
+	    <label>Dye Cloth Vivid Lime</label>
+	    <description>Make a bundle of cloth vivid lime.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividLimeCloth>10</VividLimeCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothVividGreen</defName>
+	    <label>Dye Cloth Vivid Green</label>
+	    <description>Make a bundle of cloth vivid green.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividGreenCloth>10</VividGreenCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothGreen</defName>
+	    <label>Dye Cloth Green</label>
+	    <description>Make a bundle of cloth green.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <GreenCloth>10</GreenCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+		
+	<RecipeDef>
+	    <defName>DyeClothVividTurquoise</defName>
+	    <label>Dye Cloth Vivid Turquoise</label>
+	    <description>Make a bundle of cloth vivid turquoise.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividTurquoiseCloth>10</VividTurquoiseCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothTeal</defName>
+	    <label>Dye Cloth Teal</label>
+	    <description>Make a bundle of cloth teal.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <TealCloth>10</TealCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothVividLightBlue</defName>
+	    <label>Dye Cloth Vivid Light Blue</label>
+	    <description>Make a bundle of cloth vivid light blue.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividLightBlueCloth>10</VividLightBlueCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothBlue</defName>
+	    <label>Dye Cloth Blue</label>
+	    <description>Make a bundle of cloth blue.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <BlueCloth>10</BlueCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothVividMagenta</defName>
+	    <label>Dye Cloth Vivid Magenta</label>
+	    <description>Make a bundle of cloth vivid magenta.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividMagentaCloth>10</VividMagentaCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothVividViolet</defName>
+	    <label>Dye Cloth Vivid Violet</label>
+	    <description>Make a bundle of cloth vivid violet.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividVioletCloth>10</VividVioletCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothVividPurple</defName>
+	    <label>Dye Cloth Vivid Purple</label>
+	    <description>Make a bundle of cloth vivid purple.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <VividPurpleCloth>10</VividPurpleCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothPurple</defName>
+	    <label>Dye Cloth Purple</label>
+	    <description>Make a bundle of cloth purple.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <PurpleCloth>10</PurpleCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothPureWhite</defName>
+	    <label>Dye Cloth Pure White</label>
+	    <description>Make a bundle of cloth pure white.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <PureWhiteCloth>10</PureWhiteCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothMediumGrey</defName>
+	    <label>Dye Cloth Medium Grey</label>
+	    <description>Make a bundle of cloth medium grey.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <MediumGreyCloth>10</MediumGreyCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothDarkGrey</defName>
+	    <label>Dye Cloth Dark Grey</label>
+	    <description>Make a bundle of cloth dark grey.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <DarkGreyCloth>10</DarkGreyCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothBlack</defName>
+	    <label>Dye Cloth Black</label>
+	    <description>Make a bundle of cloth black.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <BlackCloth>10</BlackCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothPrisonerBedColor</defName>
+	    <label>Dye Cloth Prisoner Bed Color</label>
+	    <description>Make a bundle of cloth prisoner bed color.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <PrisonerBedColorCloth>10</PrisonerBedColorCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothColonistBedColor</defName>
+	    <label>Dye Cloth Colonist Bed Color</label>
+	    <description>Make a bundle of cloth colonist bed color.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <ColonistBedColorCloth>10</ColonistBedColorCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>DyeClothHospitalBedColor</defName>
+	    <label>Dye Cloth Hospital Bed Color</label>
+	    <description>Make a bundle of cloth hospital bed color.</description>
+	    <jobString>dyeing cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+	    <ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	    <products>
+	      <HospitalBedColorCloth>10</HospitalBedColorCloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+	
+	<RecipeDef>
+	    <defName>BleachCloth</defName>
+	    <label>Bleach Cloth into Default</label>
+	    <description>Make dyed cloth revert to plain Cloth.</description>
+	    <jobString>bleaching cloth.</jobString>
+	    <workAmount>600</workAmount>
+	    <workSpeedStat>SculptingSpeed</workSpeedStat>
+	    <effectWorking>Tailor</effectWorking>
+	    <soundWorking>Recipe_Tailor</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+	    <ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>DyedCloth</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+	    </ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>DyedCloth</li>
+			</categories>
+		</fixedIngredientFilter>
+	    <products>
+	      <Cloth>10</Cloth>
+	    </products>
+	    <workSkill>Crafting</workSkill>
+	    <recipeUsers>
+	      <li>BarrelDye</li>
+	    </recipeUsers>
+  	</RecipeDef>
+
+
+</Defs>
