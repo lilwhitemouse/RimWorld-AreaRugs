@@ -10,7 +10,7 @@
     <label>For items that do not exist in the game</label>
     <resourceReadoutRoot>false</resourceReadoutRoot>
   </ThingCategoryDef>
-  <ThingDef ParentName="LWM_ColoredClothBase">
+  <ThingDef><!-- ParentName="LWM_ColoredClothBase">-->
     <defName>LWM_RandomColoredCloth</defName>
     <label>Randomly Colored Cloth</label>
     <description>Cloth in a random color</description>
@@ -18,6 +18,10 @@
     <thingCategories Inherit="False">
       <li>LWM_NonExistant</li>
     </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
     <!--TODO: Make it non-tradeable-->
     <!--Would be brilliant if I can make it not show up in filters :p -->
   </ThingDef>
