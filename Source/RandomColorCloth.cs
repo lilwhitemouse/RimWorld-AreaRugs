@@ -4,7 +4,7 @@ using RimWorld;
 using Verse;
 
 
-namespace LWM.AreaRugs {
+namespace LWM.Dyeable {
     public class RandomColoredCloth : ThingWithComps {
         static RandomColoredCloth() {
             coloredCloths=new List<ThingDef>();

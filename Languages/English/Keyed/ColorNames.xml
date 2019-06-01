@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  So.  Color names.  C#.
+      There IS a library that contains color names.
+      It's System.Drawing.dll.  It has the KnownColor
+      enum list, which works okay.  It has the method
+      System.Drawing.Color.FromKnownColor.  Which also
+      works okay.  In never versions of the library 
+      in my (Linux) development environment.  I cannot
+      get it to work in RimWorld's environment.  It's
+      probably a cross-platform thing, and it would 
+      work just fine in Windows, but that's not an 
+      option.  So.  A giant list of color names. 
+
+      This means, among other things, that I cannot
+      rely on color names being automatically translated
+      to whatever language by the library.  Which may or
+      may not have worked anyway.  Joy.
+
+      This list compiled by a small C# program:
+  foreach (System.Drawing.KnownColor kc in Enum.GetValues(typeof(System.Drawing.KnownColor))) {
+    if ((int)kc > 27 && (int)kc < 168) {
+			// limits based off of https://docs.microsoft.com/en-us/dotnet/api/system.drawing.knowncolor?view=netframework-3.5
+			System.Drawing.Color c=System.Drawing.Color.FromKnownColor(kc);
+      // (Must start with letter, so x)
+			Console.WriteLine("  <x"+(c.ToArgb()&0xFFFFFF).ToString("x6")+">"+c.Name+"</x"+(c.ToArgb()&0xFFFFFF).ToString("x6")+">");
+		}
+	}
+
+      Duplicate colors removed by hand after RimWorld complained about duplicates.
+-->
+<LanguageData>
+  <xf0f8ff>AliceBlue</xf0f8ff>
+  <xfaebd7>AntiqueWhite</xfaebd7>
+  <x7fffd4>Aquamarine</x7fffd4>
+  <xf0ffff>Azure</xf0ffff>
+  <xf5f5dc>Beige</xf5f5dc>
+  <xffe4c4>Bisque</xffe4c4>
+  <x000000>Black</x000000>
+  <xffebcd>BlanchedAlmond</xffebcd>
+  <x0000ff>Blue</x0000ff>
+  <x8a2be2>BlueViolet</x8a2be2>
+  <xa52a2a>Brown</xa52a2a>
+  <xdeb887>BurlyWood</xdeb887>
+  <x5f9ea0>CadetBlue</x5f9ea0>
+  <x7fff00>Chartreuse</x7fff00>
+  <xd2691e>Chocolate</xd2691e>
+  <xff7f50>Coral</xff7f50>
+  <x6495ed>CornflowerBlue</x6495ed>
+  <xfff8dc>Cornsilk</xfff8dc>
+  <xdc143c>Crimson</xdc143c>
+  <x00ffff>Cyan</x00ffff>
+  <x00008b>DarkBlue</x00008b>
+  <x008b8b>DarkCyan</x008b8b>
+  <xb8860b>DarkGoldenrod</xb8860b>
+  <xa9a9a9>DarkGray</xa9a9a9>
+  <x006400>DarkGreen</x006400>
+  <xbdb76b>DarkKhaki</xbdb76b>
+  <x8b008b>DarkMagenta</x8b008b>
+  <x556b2f>DarkOliveGreen</x556b2f>
+  <xff8c00>DarkOrange</xff8c00>
+  <x9932cc>DarkOrchid</x9932cc>
+  <x8b0000>DarkRed</x8b0000>
+  <xe9967a>DarkSalmon</xe9967a>
+  <x8fbc8b>DarkSeaGreen</x8fbc8b>
+  <x483d8b>DarkSlateBlue</x483d8b>
+  <x2f4f4f>DarkSlateGray</x2f4f4f>
+  <x00ced1>DarkTurquoise</x00ced1>
+  <x9400d3>DarkViolet</x9400d3>
+  <xff1493>DeepPink</xff1493>
+  <x00bfff>DeepSkyBlue</x00bfff>
+  <x696969>DimGray</x696969>
+  <x1e90ff>DodgerBlue</x1e90ff>
+  <xb22222>Firebrick</xb22222>
+  <xfffaf0>FloralWhite</xfffaf0>
+  <x228b22>ForestGreen</x228b22>
+  <xff00ff>Fuchsia</xff00ff>
+  <xdcdcdc>Gainsboro</xdcdcdc>
+  <xf8f8ff>GhostWhite</xf8f8ff>
+  <xffd700>Gold</xffd700>
+  <xdaa520>Goldenrod</xdaa520>
+  <x808080>Gray</x808080>
+  <x008000>Green</x008000>
+  <xadff2f>GreenYellow</xadff2f>
+  <xf0fff0>Honeydew</xf0fff0>
+  <xff69b4>HotPink</xff69b4>
+  <xcd5c5c>IndianRed</xcd5c5c>
+  <x4b0082>Indigo</x4b0082>
+  <xfffff0>Ivory</xfffff0>
+  <xf0e68c>Khaki</xf0e68c>
+  <xe6e6fa>Lavender</xe6e6fa>
+  <xfff0f5>LavenderBlush</xfff0f5>
+  <x7cfc00>LawnGreen</x7cfc00>
+  <xfffacd>LemonChiffon</xfffacd>
+  <xadd8e6>LightBlue</xadd8e6>
+  <xf08080>LightCoral</xf08080>
+  <xe0ffff>LightCyan</xe0ffff>
+  <xfafad2>LightGoldenrodYellow</xfafad2>
+  <xd3d3d3>LightGray</xd3d3d3>
+  <x90ee90>LightGreen</x90ee90>
+  <xffb6c1>LightPink</xffb6c1>
+  <xffa07a>LightSalmon</xffa07a>
+  <x20b2aa>LightSeaGreen</x20b2aa>
+  <x87cefa>LightSkyBlue</x87cefa>
+  <x778899>LightSlateGray</x778899>
+  <xb0c4de>LightSteelBlue</xb0c4de>
+  <xffffe0>LightYellow</xffffe0>
+  <x00ff00>Lime</x00ff00>
+  <x32cd32>LimeGreen</x32cd32>
+  <xfaf0e6>Linen</xfaf0e6>
+  <x800000>Maroon</x800000>
+  <x66cdaa>MediumAquamarine</x66cdaa>
+  <x0000cd>MediumBlue</x0000cd>
+  <xba55d3>MediumOrchid</xba55d3>
+  <x9370db>MediumPurple</x9370db>
+  <x3cb371>MediumSeaGreen</x3cb371>
+  <x7b68ee>MediumSlateBlue</x7b68ee>
+  <x00fa9a>MediumSpringGreen</x00fa9a>
+  <x48d1cc>MediumTurquoise</x48d1cc>
+  <xc71585>MediumVioletRed</xc71585>
+  <x191970>MidnightBlue</x191970>
+  <xf5fffa>MintCream</xf5fffa>
+  <xffe4e1>MistyRose</xffe4e1>
+  <xffe4b5>Moccasin</xffe4b5>
+  <xffdead>NavajoWhite</xffdead>
+  <x000080>Navy</x000080>
+  <xfdf5e6>OldLace</xfdf5e6>
+  <x808000>Olive</x808000>
+  <x6b8e23>OliveDrab</x6b8e23>
+  <xffa500>Orange</xffa500>
+  <xff4500>OrangeRed</xff4500>
+  <xda70d6>Orchid</xda70d6>
+  <xeee8aa>PaleGoldenrod</xeee8aa>
+  <x98fb98>PaleGreen</x98fb98>
+  <xafeeee>PaleTurquoise</xafeeee>
+  <xdb7093>PaleVioletRed</xdb7093>
+  <xffefd5>PapayaWhip</xffefd5>
+  <xffdab9>PeachPuff</xffdab9>
+  <xcd853f>Peru</xcd853f>
+  <xffc0cb>Pink</xffc0cb>
+  <xdda0dd>Plum</xdda0dd>
+  <xb0e0e6>PowderBlue</xb0e0e6>
+  <x800080>Purple</x800080>
+  <xff0000>Red</xff0000>
+  <xbc8f8f>RosyBrown</xbc8f8f>
+  <x4169e1>RoyalBlue</x4169e1>
+  <x8b4513>SaddleBrown</x8b4513>
+  <xfa8072>Salmon</xfa8072>
+  <xf4a460>SandyBrown</xf4a460>
+  <x2e8b57>SeaGreen</x2e8b57>
+  <xfff5ee>SeaShell</xfff5ee>
+  <xa0522d>Sienna</xa0522d>
+  <xc0c0c0>Silver</xc0c0c0>
+  <x87ceeb>SkyBlue</x87ceeb>
+  <x6a5acd>SlateBlue</x6a5acd>
+  <x708090>SlateGray</x708090>
+  <xfffafa>Snow</xfffafa>
+  <x00ff7f>SpringGreen</x00ff7f>
+  <x4682b4>SteelBlue</x4682b4>
+  <xd2b48c>Tan</xd2b48c>
+  <x008080>Teal</x008080>
+  <xd8bfd8>Thistle</xd8bfd8>
+  <xff6347>Tomato</xff6347>
+  <x40e0d0>Turquoise</x40e0d0>
+  <xee82ee>Violet</xee82ee>
+  <xf5deb3>Wheat</xf5deb3>
+  <xffffff>White</xffffff>
+  <xf5f5f5>WhiteSmoke</xf5f5f5>
+  <xffff00>Yellow</xffff00>
+  <x9acd32>YellowGreen</x9acd32>
+</LanguageData>
+

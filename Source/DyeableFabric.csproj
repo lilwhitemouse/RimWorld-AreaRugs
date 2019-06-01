@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2B2D9E17-BC39-4CC9-858A-541D79A222B0}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>LWM.AreaRugs</RootNamespace>
-    <AssemblyName>AreaRugs</AssemblyName>
+    <RootNamespace>LWM.Dyeable</RootNamespace>
+    <AssemblyName>LWM.DyeableFabric</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -48,13 +48,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-		<Reference Include="Assembly-CSharp">
+    <Reference Include="Assembly-CSharp">
       <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\RimWorld\RimWorldLinux_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>..\Assemblies\System.Drawing.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RandomColorCloth.cs" />
+    <Compile Include="CompDyeable.cs" />
+    <Compile Include="ColorMapper.cs" />
+    <Compile Include="DyeableFabricTracker.cs" />
+    <Compile Include="DyedThingDefGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

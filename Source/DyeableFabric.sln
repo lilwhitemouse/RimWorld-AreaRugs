@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaRugs", "AreaRugs.csproj", "{2B2D9E17-BC39-4CC9-858A-541D79A222B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DyeableFabric", "DyeableFabric.csproj", "{2B2D9E17-BC39-4CC9-858A-541D79A222B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
