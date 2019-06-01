@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationAdd" >
+    <xpath>/Defs/ThingDef[defName="Cloth"]/comps</xpath>
+    <value><li><compClass>LWM.Dyeable.CompDyeable</compClass></li></value>
+  </Operation>
+</Patch>
